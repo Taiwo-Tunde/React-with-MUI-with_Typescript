@@ -1,4 +1,5 @@
-import { Button, Typography, Stack } from "@mui/material";
+import { Button, Typography, Stack, IconButton } from "@mui/material";
+import SendIcon from "@mui/icons-material/Send";
 
 export const MuiButton = () => {
   return (
@@ -30,6 +31,38 @@ export const MuiButton = () => {
         <Button variant="contained" color="success">
           success
         </Button>
+      </Stack>
+      <Stack direction="row" spacing={6}>
+        <Button variant="contained" color="primary" size="small">
+          Contained
+        </Button>
+        <Button variant="contained" color="primary" size="medium">
+          Contained
+        </Button>
+        <Button variant="contained" color="primary" size="large">
+          Contained
+        </Button>
+      </Stack>
+      <Stack spacing={6} direction="row">
+        <Button
+          variant="contained"
+          color="primary"
+          size="medium"
+          startIcon={<SendIcon />}
+        >
+          send
+        </Button>
+        <Button
+          variant="contained"
+          color="primary"
+          size="medium"
+          endIcon={<SendIcon />}
+        >
+          send
+        </Button>
+        <IconButton aria-label="send" color="primary" size="small">
+          <SendIcon />
+        </IconButton>
       </Stack>
     </Stack>
   );
