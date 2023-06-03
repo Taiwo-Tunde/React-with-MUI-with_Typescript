@@ -3,7 +3,7 @@ import SendIcon from "@mui/icons-material/Send";
 
 export const MuiButton = () => {
   return (
-    <Stack display="block" spacing={10}>
+    <Stack display="block" spacing={5}>
       <Stack>
         <Typography>All about Buttons</Typography>
       </Stack>
@@ -43,7 +43,7 @@ export const MuiButton = () => {
           Contained
         </Button>
       </Stack>
-      <Stack spacing={6} direction="row">
+      <Stack spacing={3} direction="row">
         <Button
           variant="contained"
           color="primary"
