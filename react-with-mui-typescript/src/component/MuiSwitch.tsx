@@ -15,7 +15,7 @@ export const MuiSwitch = () => {
         label="dark mode"
         control={<Switch />}
         value={switchValue}
-        onChange={handleChange}
+        onChange = {handleChange}
       />
     </Box>
   );
