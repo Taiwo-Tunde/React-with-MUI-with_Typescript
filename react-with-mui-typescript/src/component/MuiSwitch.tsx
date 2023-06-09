@@ -13,9 +13,7 @@ export const MuiSwitch = () => {
     <Box>
       <FormControlLabel
         label="dark mode"
-        control={<Switch />}
-        value={switchValue}
-        onChange = {handleChange}
+        control={<Switch value={switchValue} onChange={handleChange} />}
       />
     </Box>
   );
